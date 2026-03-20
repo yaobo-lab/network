@@ -2,11 +2,14 @@
 name = "network"
 version = "1.0.0"
 edition = "2024"
+description = 'Network Basic Library: Network Basic Operations, WiFi Definition, Linux WPA Implementation'
+license = 'MIT'
+authors = ['yaobos@outlook.com']
+repository = 'https://github.com/yaobo-lab/network'
 
-[features]
-default = []
-wifi = ["async-trait"]
-wpa = ["libc", "config", "tempfile"]
+
+
+
 
 [dependencies]
 #基础库
@@ -51,3 +54,9 @@ tokio = { version = "1", features = [
 ] }
 regex = "1.11.1"
 encoding_rs = "0.8.35"
+
+
+[features]
+default = []
+wifi = ["async-trait"]
+wpa = ["libc", "config", "tempfile"]
